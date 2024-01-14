@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title> Raiyan Web Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script src="https://kit.fontawesome.com/1ea017ae8b.js" crossorigin="anonymous"></script>
+    <body>
+        <div class ="container">
+            <nav>
+                <h2 id="name-fancy">
+                    Ra<span>i</span>yan Re<span>z</span>a
+                </h2>
+                <ul id="sidemenu">
+                    <li class="nav-tab">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="nav-tab">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-tab">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-tab">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        
+            <div class="intro-row">
+                    <div class="intro-col-1">
+                       
+                    <div class="intro-text">
+                        <p> CS Major from NYU</p>
+                        <h1> Hello World, <br>I'm <span id="name-fancy2">Ra<span>i</span>yan Re<span>z</span>a</h1>
+                        <div id="git-and-linkedin">
+                            <a href="https://github.com/srr408" target="_blank"><span>See GitHub Account</span><i class="fa-brands fa-github" id="github-icon"></i></a>
+                            <a href="https://www.linkedin.com/in/raiyan-reza" target="_blank"><span>See LinkedIn Profile</span><i class="fa-brands fa-linkedin" id="linkedin-icon"></i></a>
+                            <a href="downloadRepo/resumeRaiyan_2.pdf" id="resume-icon" download><span>Download Resume</span><i class="fa-solid fa-file"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="intro-col-2">
+                        <img id="my-picture" src="images/my-picture.jpg">
+                    </div>
+            </div>
+        </div>
+    <!-- ----------------------- ABOUT ----------------------- -->
+        <div id="about">
+            <div class="container">
+                <h1 class="sub-heading">About Me</h1>
+            
+                <div class="credentials">
+                    <div>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h2> Education </h2>
+                        <ul class="cred-details">
+                            <li><span>Fall, 2023</span><br>BSc in Computer Science, NYU, Shanghai School</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h2> Experience </h2>
+                        <ul class="cred-details">
+                            <li><span>12th Dec, 2023 - 25th Dec, 2023</span><br>Data Analytics On Hydrological Model Using Shyft, Pandas, and Matplotlib, Client Information Confidential, Client Works For A Major Energy Firm In Europe</li>
+                            <li><span>06th Jun, 2022 - 12th Aug, 2022</span><br>Private Tuition in Inctorductory To Computer Programming; Client, Student At International University of Bangladesh</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-terminal"></i>
+                        <h2> Skill </h2>
+                        <ul class="cred-details">
+                            <li><span>Programming Languages</span><br>Python, C, C++, Haskell</li>
+                            <li><span>OS</span><br>Windows, Linux</li>
+                            <li><span>Framework & Tools</span><br>Django, D3 Library of Javascript, Latex, Pandas, Numpy, Shyft</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    <!-- ----------------------- PROJECTS ----------------------- -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-heading">Projects</h1>
+                <div class="projects-list">
+                    <div class="project" id="info-viz-section">
+                        <!--<img src="images/info-viz.png" id="info-viz"> -->
+                        <img src="images/info-viz.png" id="info-viz">
+                        <div class="layer">
+                            <h3>A Sketch of A Pandemic</h3>
+                            <p>
+                                Using D3 library of Javascript, the mortality and cases
+                                of the COVID-19 pandemic is visualized with a special focus
+                                on the United States of America.
+                            </p>
+                            <ul class="external-links">
+                                <li>
+                                    <a href="pandemicViz/index.html" target="_blank">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/srr408/A-Sketch-of-A-Pandemic" target="_blank">
+                                        <i class="fa-brands fa-github" id="github-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="project" >
+                        <img src="images/thesis.jpg" id="thesis">
+                        <div class="layer">
+                            <h3>Theoretical Work On Context Free Chinese Parser</h3>
+                            <p>
+                                A collabrative work on using context free grammer to parse 
+                                simple sentences in Chinese. 
+                            </p>
+                            <ul class="external-links">
+                                <li>
+                                    <a href="downloadRepo/writtenReport_Raiyan.pdf">
+                                        <i class="fa-solid fa-file"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/qalb.png" id="qalb">
+                        <div class="layer">
+                            <h3>Qalb+</h3>
+                            <p>
+                              A web application prototype to bring patients
+                              and doctors together in the region of the United Arab Emierates.
+                              The work is a collabrative project and written in Django.
+                            </p>
+                            <ul class="external-links">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github" id="github-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------- CONTACTS ----------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-col1">
+                        <h1 class="sub-heading">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>srr408@nyu.edu</p>
+                        <p><i class="fa-solid fa-envelope"></i>syedraiyannurireza@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>(0880) 1706-562505</p>
+                        <div class="social-icons">
+                           <a href="https://github.com/srr408"><i class="fa-brands fa-github" id="github-icon2"></i></a> 
+                            <a href="https://www.linkedin.com/in/raiyan-reza"><i class="fa-brands fa-linkedin" id="linkedin-icon2"></i></a>
+                        </div>
+                        <a href="downloadRepo/resumeRaiyan_2.pdf" download class="btn btn2">Donwload Resume</a>
+                    </div>
+                    
+                    <div class="contact-col2">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="credits">
+                <p> Made with Easy Tutorials </p>
+            </div>
+        </div>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+   
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+   
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+   
+       </script>
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbySnCEqeTVqeLAVK6x6kWmzzrzUh2Aq4jtLVlHTBTFoZUOTKlN_qtD9hk8Hu25_yZVU/exec"
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+     
+             form.addEventListener('submit', e =>{
+                 e.preventDefault();
+                 fetch(scriptURL, { method:'POST', body: new FormData(form)})
+                     .then( response=> {
+                     msg.innerHTML = " Message sent successfully "
+                     setTimeout( function(){msg.innerHTML = ""}, 5000)
+                     form.reset()
+                 })
+                     .catch(error => console.error('Error!', error.message))
+             })
+         </script>
+    </body>
+</html>
+

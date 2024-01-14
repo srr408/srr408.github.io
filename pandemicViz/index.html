@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Covid-19 Info Visualization</title>
+ <link rel="shortcut icon" href="#">
+ <script type="text/javascript" src="d3.js"></script>
+ <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    
+ <script src="finalScript.js"> </script>
+
+ <div id="globe">
+   <h1 id="heading1">A Sketch of A Pandemic</h1>
+   <h2 id="heading2">Introduction</h2>
+   <p id="openStatement">The following infographics showcases the impact of the COVID-19 Pandemic in two-fold ways. First, a global overview 
+    that illustrates the total number of cases, total Covid-19 deaths, total number of cases and total number of deaths scaled to country. Please note, term country* here 
+    is used in a very broand and inclusive manner. Some of the portrayed regions' status as a sovereign country is disputed, and will not appear in lists that are 
+    more stringent with the definiton. Second, the infographics will focus on the United States of America. The country's combination of a highly politiczed COVID response, 
+    advanced scientific basis, and developed economy makes it a interesting data point. Having siutated USA in a global locus in the first part, the second part permits the audience
+    to appreciate the time progress of this outbreak at more granular state-by-state detail. Enjoy!
+   </p>
+ </div>
+
+ <div width="500">
+  <h1 id="heading2">Global Overview</h1>
+    <input type="radio" class="TotalCases" name="mode" value="totalcases">
+    <label for="totalcases">Total Number of Cases Per Country*</label>
+    <input type="radio" class="TotalDeaths" name="mode" value="totaldeaths">
+    <label for="totaldeaths">Total Number of Deaths Per Country*</label>
+    <input type="radio" class="scaledTotalCases" name="mode" value="scaledtotalcases">
+    <label for="scaledtotalCases">Total COVID Cases as Percentage of Population of Country*</label>
+    <input type="radio" class="scaledDeaths" name="mode" value="scaleddeaths">
+    <label for="scaledtotaldeaths">Total COVID Deaths as Percentage of Population of Country*</label>
+    
+     </div>
+
+ <div id="barTreeContainer">
+   <!-- <img  id="treeBack" src="back.png" width="50" height="50">-->
+
+ <svg width="675" height="675" id="treeMapCanvas">
+     <g id="treeMap">
+         
+     </g>
+ </svg>
+ <!--<img id="treeNext" src="next-1.png" width="50" height="50">-->
+  <svg  width="800" height="675" id="barChartCanvas">
+     <g id="barChart">
+     </g>
+ </svg>
+
+ </div>
+
+
+
+<img id="backButton1" src="back.png" width="25" height="25">
+
+<img id="nextButton1" src="back.png" width="25" height="25">
+<div>
+
+  <h1 id="heading3">USA Overview</h1>
+<p id="months ">Month</p>
+<input id='slider' type='range' min='0' max='11' value='11' step='1'>
+<input type="text" id="slidertext" value="December 2020">
+</div>
+
+<div id="usMapContainer">
+<svg id="usMapCanvas">
+  <g>
+
+  </g>
+
+  
+</svg>
+
+
+<svg id="stateInformation">
+</svg>
+
+</div>
+
+
+
+
+</body>
+</html>

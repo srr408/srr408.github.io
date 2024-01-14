@@ -1,0 +1,119 @@
+
+@font-face { font-family: Arvo; src: url('Arvo-Regular.ttf'); } 
+body{
+    background-color: white;
+}
+
+text{
+    font-family: Arvo;
+}
+
+#heading1{
+    text-align: center;
+    font-family:Arvo;
+}
+
+#heading2{
+    text-align: left;
+    font-family:Arvo;
+}
+
+#heading2{
+    text-align: left;
+    font-family:Arvo;
+}
+
+#heading3{
+    text-align: left;
+    font-family:Arvo;
+}
+#openStatement{
+    text-align:left;
+    font-family: Arvo;
+    line-height: 2;
+}
+
+
+rect.totalBars{
+    stroke:black;
+    fill:	#000080;
+}
+
+
+rect.deathBars{
+    fill:#800000;
+}
+
+rect.scaledCaseBars{
+    fill:#006400;
+}
+
+rect.scaledDeathBars{
+    fill:#8b4513;
+}
+
+.barLabel{
+    font-size: 8px;
+}
+
+#barTreeContainer{
+    position:relative;
+}
+
+
+#nextButton1{
+    position:relative;
+    top:-40px;
+    left:1100px;
+    transform: rotate(180deg);
+}
+#backButton1{
+    position:relative;
+    top:-40px;
+    left:1050px;
+}
+
+
+#usMapContainer{
+    position:relative;
+}
+
+
+.line{
+    fill:none;
+    stroke:blue;
+}
+
+.line2{
+    fill:none;
+    stroke:red;
+}
+
+
+#timeHeading{
+    font-size: 20px;
+    fill:"#808080";
+}
+
+.stateLabel{
+    font-size:8px;
+    fill:red;
+    text-anchor: middle;
+}
+
+/*
+
+#slider{
+    position:relative;
+    top:-200px;
+}
+
+*/
+
+
+
+/*
+text.barLabels{
+
+}
+*/

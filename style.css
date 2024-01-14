@@ -1,0 +1,476 @@
+/* another nice color: #CE4A7EFF */
+
+@font-face {
+    font-family: eightBit;
+    src: url(pixeloid-font/PixeloidMono-d94EV.ttf);
+    font-weight: bold;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*--------------------------- MY NAME IN A FANCY FONT ---------------------------*/
+#name-fancy{
+    font-family: eightBit;
+}
+
+#name-fancy span{
+    color: aqua;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+.container{
+    padding: 10px 10%;
+
+}
+
+.sub-heading{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+
+/*--------------------------- NAVIGATION BAR ---------------------------*/
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    transition: transform 0.5s;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*--------------------------- INTRO ---------------------------*/
+
+#name-fancy2 {
+    font-family: eightBit;
+}
+
+
+#name-fancy2 span{
+    color:aqua;
+}
+
+.intro-row{
+    font-size:30px;
+    margin-top:  5%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.intro-col-1{
+    margin-top:10%;
+    flex-basis: 40%;
+}
+
+.intro-col-2{
+    flex-basis: 40%;
+}
+
+#git-and-linkedin{
+    margin-left: 25px;
+}
+
+
+#git-and-linkedin a{
+    text-decoration:none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:lightgray;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+
+
+
+#git-and-linkedin a:hover{
+    color:#CE4A7EFF;
+    transform: translateY(25px);
+}
+
+#git-and-linkedin a:hover span{
+    display: block;
+    transform: translateY(-35px);
+}
+
+#git-and-linkedin a span{
+    display: none;
+    font-family: eightBit;
+    font-size: xx-small;
+    position:absolute;
+    transition: transform 0.5s;
+}
+
+
+.intro-col-2{
+    flex-basis: 60%;
+}
+
+#my-picture{
+    border-radius: 50%;
+    max-width: 60%;
+}
+
+/*--------------------------- ABOUT ME ---------------------------*/
+
+#about{
+    padding: 30px 0;
+}
+.credentials{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top:50px;
+}
+
+.credentials div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.credentials div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.credentials div h2{
+    font-family: eightBit;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.credentials div:hover{
+    background: aqua;
+    transform: translateY(-10px);
+}
+
+.credentials div:hover li span{
+    color:#262626;
+}
+
+.cred-details li{
+    list-style: none;
+    margin: 10px 0; 
+}
+
+.cred-details li span{
+    color:aqua;
+    font-size: 14px;
+}
+
+/*--------------------------- PROJECTS ---------------------------*/
+
+
+#projects{
+    padding: 50px 0;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top:50px; 
+}
+
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5;
+}
+
+
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),aqua);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow:hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 5px;
+}
+
+
+.layer a{
+    display: inline-block;
+    margin-top: 20x;
+    color: aqua;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+
+.project:hover img{
+    transform: scale(1.1);
+}
+
+.project:hover .layer{
+    height: 100%;
+}
+
+
+/*--------------------------- CONTACT ME ---------------------------*/
+
+.contact-col1{
+    flex-basis: 35%;
+}
+
+.contact-col2{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-col1 p i{
+    color: #CE4A7EFF;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration:none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #CE4A7EFF;
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #CE4A7EFF;
+    padding: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background:#CE4A7EFF;
+}
+
+.btn.btn2{
+    background:#CE4A7EFF;
+    display: inline-block;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:#262626;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size:18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 6opx;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.credits{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background:#262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+
+#msg{
+    color: #61b752;
+    margin-top: -40 px;
+    display: block;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+/*--------------------------- SMALL SCREEN ---------------------------*/
+
+@media only screen and (max-width: 600px){
+
+    #name-fancy{
+        visibility: hidden;
+    }
+
+    .intro-col-1{
+        margin-top: 53%;
+        flex-basis: 100%;
+    }
+
+    .intro-col-2{
+        flex-basis: 100%;
+    }
+
+    #my-picture{
+        margin-top:100%;
+        max-width:80%;
+    }
+
+    .intro-text{
+        margin-top: 100;
+        font-size: 16px;
+    }
+
+    .intro-text{
+        font-size:30 px;
+    }
+    
+    .intro-text h1{
+        font-size: 25px;
+    }
+
+    #git-and-linkedin a{
+        font-size:medium;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-heading{
+        font-size: 40px;
+    }
+
+    .contact-col1, .contact-col2{
+        flex-basis: 100%;
+    }
+}
