@@ -1,3 +1,4 @@
+/* ------- SCRIPT FOR SIDE MENU IN SMALL DEVICE VIEW ------- */
 var sidemenu = document.getElementById("sidemenu");
    
 function openmenu(){
