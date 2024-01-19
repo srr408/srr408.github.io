@@ -380,6 +380,10 @@ form .btn2{
     margin-top: 20px;
 }
 
+.credits a{
+    color: aqua;
+}
+
 .row{
     display: flex;
     justify-content:space-between;
