@@ -185,6 +185,7 @@ nav ul li a:hover::after{
 }
 
 .credentials div:hover{
+    color: #CE4A7EFF;
     background: aqua;
     transform: translateY(-10px);
 }
