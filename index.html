@@ -9,7 +9,7 @@
     </head>
     <script src="https://kit.fontawesome.com/1ea017ae8b.js" crossorigin="anonymous"></script>
     <body>
-        <div class ="container">
+        <div class ="container" id="home">
             <nav>
                 <h2 id="name-fancy">
                     Ra<span>i</span>yan Re<span>z</span>a
@@ -31,24 +31,33 @@
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-        
-            <div class="intro-row" id="home">
-                    <div class="intro-col-1">
-                       
-                    <div class="intro-text">
-                        <p> CS Major from NYU</p>
-                        <h1> Hello World, <br>I'm <span id="name-fancy2">Ra<span>i</span>yan Re<span>z</span>a</h1>
-                        <div id="git-and-linkedin">
-                            <a href="https://github.com/srr408" target="_blank"><span>See GitHub Account</span><i class="fa-brands fa-github" id="github-icon"></i></a>
-                            <a href="https://www.linkedin.com/in/raiyan-reza" target="_blank"><span>See LinkedIn Profile</span><i class="fa-brands fa-linkedin" id="linkedin-icon"></i></a>
-                            <a href="downloadRepo/resumeRaiyan.pdf" id="resume-icon" download><span>Download Resume</span><i class="fa-solid fa-file"></i></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="intro-col-2">
-                        <img id="my-picture" src="images/my-picture.JPG">
-                    </div>
+            <div class="cover">
+                <img id="my-picture" src="images/my-picture.JPG">
+
             </div>
+
+            <div class="intro-text">
+                <h1> Hello World, <br>I'm <span id="name-fancy2">Ra<span>i</span>yan Re<span>z</span>a</h1>
+            </div>
+            <a class="btn" id="learnBTN" onclick="introduce()"> Learn More </a>
+
+            <div id ="introduction">
+                <div class="description">
+                    <p> An aspiring programmer seeking full-time position in the tech industry. While currently based in Dhaka, Bangladesh I possess a global perspective that has been nurtured over the course of my education in computer science from <a class = "links" href="https://www.nyu.edu/about.html" target="_blank"> New York University's</a> school at <a class = "links" href="https://shanghai.nyu.edu/about" target="_blank">Shanghai</a>, China, and, for my study abroad semester, at <a class ="links" href="https://nyuad.nyu.edu/en/about/nyuad-at-a-glance.html" target="_blank">Abu Dhabi</a>, United Arab Emirates. Such a global perspective has been indispensible to my capacity to work in an international context and partake in a nuanced global dialogue. A manifest proof to this claim was my short-term project with a client who is based in Europe and under the employment of a major energy production firm. It was not only my know-how in Python that put me in demand but also my grasp of client's prerequisite for confidentiality and privacy contingent on their specific culture and workplace. 
+                    <br>
+                    <br>
+                    If you, therefore, are in need of a capable programmer comfortable in an increasingly globalized world you may find in me a strong candidate.  Feel free to explore my background more deeply on my website. 
+                    </p>
+                </div>
+                <div id="git-and-linkedin" >
+                    <a href="https://github.com/srr408" target="_blank"><span>See GitHub Account</span><i class="fa-brands fa-github" id="github-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/raiyan-reza" target="_blank"><span>See LinkedIn Profile</span><i class="fa-brands fa-linkedin" id="linkedin-icon"></i></a>
+                    <a href="downloadRepo/resumeRaiyan.pdf" id="resume-icon" download><span>Download Resume</span><i class="fa-solid fa-file"></i></a>
+                </div>
+                <a class="btn" id="hide" onclick="hideIntro()"> Hide </a>
+            </div>
+
+           
         </div>
     <!-- ----------------------- ABOUT ----------------------- -->
         <div id="about">
