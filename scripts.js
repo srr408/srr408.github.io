@@ -10,6 +10,28 @@ function closemenu(){
 }
 
 
+/* ------- SCRIPT SHOWING/HIDING DESCRIPTION ------- */
+
+var introduction = document.getElementById("introduction")
+var learnButton = document.getElementById("learnBTN")
+
+function introduce() {
+
+console.log(introduction);
+
+console.log(introduction.style.display);
+
+
+    introduction.style.display = "block";
+    learnButton.style.display = "none";
+}
+
+function hideIntro(){
+    introduction.style.display = "none";
+    learnButton.style.display= "block";
+}
+
+
 /* ------- SCRIPT FOR SUBMISSION FORM ------- */
 
 const scriptURL = "https://script.google.com/macros/s/AKfycbySnCEqeTVqeLAVK6x6kWmzzrzUh2Aq4jtLVlHTBTFoZUOTKlN_qtD9hk8Hu25_yZVU/exec"
@@ -26,3 +48,4 @@ form.addEventListener('submit', e =>{
     })
      .catch(error => console.error('Error!', error.message))
 })
+
