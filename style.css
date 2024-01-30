@@ -407,6 +407,14 @@ form .btn2{
     color: aqua;
 }
 
+.credits h3{
+    font-size: small;
+}
+
+.credits p{
+    font-size:smaller;
+}
+
 .row{
     display: flex;
     justify-content:space-between;
@@ -497,5 +505,13 @@ nav .fa-solid{
 
     .contact-col1, .contact-col2{
         flex-basis: 100%;
+    }
+
+    .credits h3{
+        font-size: smaller;
+    }
+
+    .credits p{
+        font-size:x-small;
     }
 }
