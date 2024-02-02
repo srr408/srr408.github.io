@@ -158,8 +158,8 @@ nav ul li a:hover::after{
 }
 
 .description ul{
-    position: relative,
-    margin-left: 5px;
+    position: absolute,
+    left: 10px;
     list-style-type:circle;
 }
 
