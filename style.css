@@ -157,6 +157,12 @@ nav ul li a:hover::after{
     text-align:left;
 }
 
+.description ul{
+    position: relative,
+    margin-left: 5px;
+    list-style-type:circle;
+}
+
 .links{
     color:#CE4A7EFF;
 }
