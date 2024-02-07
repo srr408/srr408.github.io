@@ -154,12 +154,51 @@ nav ul li a:hover::after{
 
 .description{
     margin-top: 10px;
-    text-align:left;
+    text-align: left;
 }
 
+.description h2{
+    text-align: center;
+}
 .description ul{
-    margin-left: 30px;
-    list-style-type:circle;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.description ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: small;
+}
+
+.description ul li span{
+    color: aqua;
+    font-family: eightBit
+}
+
+#skills{
+    background-color: #262626;
+    border-radius: 10px;
+}
+
+#skills i{
+    margin-left: 5px;
+}
+
+#skills:hover{
+    background-color: aqua;
+}
+
+#skills:hover i{
+    color: #CE4A7EFF;
+}
+
+#skills:hover ul li span{
+    color: #CE4A7EFF;
+}
+
+#skills:hover ul li{
+    color: #262626;
 }
 
 .links{
@@ -502,6 +541,10 @@ nav .fa-solid{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+
+    .description ul li{
+        font-size: x-small;
     }
 
     .sub-heading{
