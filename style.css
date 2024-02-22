@@ -93,9 +93,9 @@ nav ul li a:hover::after{
 
 #my-picture{
     border-radius: 50%;
-    max-width: 50%;
+    max-width: 40%;
     display:block;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -104,7 +104,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 
@@ -144,8 +144,12 @@ nav ul li a:hover::after{
 
 
 #learnBTN{
-    margin-top: 10px;
+    margin-top: 4px;
     display: block;
+}
+
+#hide{
+    margin-top: 21px;
 }
 
 #introduction{
@@ -496,6 +500,14 @@ nav .fa-solid{
     #my-picture{
         margin-top:10%;
         max-width:80%;
+    }
+
+    #learnBTN{
+        font-size: x-small;
+    }
+
+    #hide{
+        font-size: x-small;
     }
 
     .intro-text{
