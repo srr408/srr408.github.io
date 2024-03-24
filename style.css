@@ -297,6 +297,7 @@ nav ul li a:hover::after{
 
 .project-caption h3{
     font-family: eightBit;
+    font-size: smaller;
 }
 
 .project:hover .project-caption{
