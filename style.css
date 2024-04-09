@@ -315,6 +315,11 @@ nav ul li a:hover::after{
 
 .credentials div:hover li span{
     color:#262626;
+    font-weight: 600;
+}
+
+.credentials div:hover .cred-details li{
+    font-weight: 400;
 }
 
 .cred-details li{
