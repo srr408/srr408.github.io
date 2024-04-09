@@ -194,8 +194,17 @@ nav ul li a:hover::after{
     color: #fff;
 }
 
+.resume:hover{
+    background-color: aqua;
+}
+
 .resume:hover a i{
     color:#CE4A7EFF;
+}
+
+.resume:hover a p{
+    color:#262626;
+    font-weight: 600;
 }
 
 .resume:hover a{
