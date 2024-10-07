@@ -138,8 +138,12 @@ nav ul li a:hover::after{
 
 
 .intro-text{
-    font-size: larger;
     text-align: center;
+    font-size: larger;
+}
+
+.intro-text h1{
+    font-family: eightBit;
 }
 
 #show-resume{
@@ -171,6 +175,8 @@ nav ul li a:hover::after{
     margin-bottom: 0px;
     width: 100%;
 }
+
+
 
 .resume{
     margin-top: 10px;
@@ -211,10 +217,22 @@ nav ul li a:hover::after{
     transform: translateX(-5px);
 }
 
-
+#hide-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    width:100%;
+}
 
 #hide{
     margin-top: 21px;
+}
+
+#resume3{
+    margin-top: 21px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 100%;
 }
 
 #introduction{
@@ -322,6 +340,9 @@ nav ul li a:hover::after{
     font-weight: 400;
 }
 
+.credentials div:hover .cred-details li a{
+    color:purple;
+}
 .cred-details li{
     list-style: none;
     margin: 10px 0; 
@@ -591,11 +612,16 @@ nav .fa-solid{
         font-size:x-small;
     }
 
+    #resume3{
+        font-size:x-small;
+    }
+
     #hide{
         font-size: x-small;
     }
 
     .intro-text{
+        
         margin-top: 100;
         font-size: 16px;
     }
@@ -605,6 +631,7 @@ nav .fa-solid{
     }
     
     .intro-text h1{
+        font-family: eightBit;
         font-size: 25px;
     }
 
