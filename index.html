@@ -1,378 +1,689 @@
-<!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport"content="width=device-width, initial-scale=1.0">
-        <title> Raiyan Reza Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <script src="https://kit.fontawesome.com/1ea017ae8b.js" crossorigin="anonymous"></script>
-    <body>
-        <div class ="container" id="home">
-            <nav>
-                <h2 id="name-fancy">
-                    Ra<span>i</span>yan Re<span>z</span>a
-                </h2>
-                <ul id="sidemenu">
-                    <li class="nav-tab">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="nav-tab">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="nav-tab">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-tab">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="cover">
-                <img id="my-picture" src="images/my-picture.JPG">
+/* another nice color: #CE4A7EFF */
 
-            </div>
+@font-face {
+    font-family: eightBit;
+    src: url(pixeloid-font/PixeloidMono-d94EV.ttf);
+    font-weight: bold;
+}
 
-            <div class="intro-text">
-                <h1> Hello World, <br>I'm Raiyan Reza</h1>
-            </div>
-            <div id="show-resume">
-                <div>
-                    <a class="btn" id="learnBTN" onclick="changeDisplay([['introduction','block'],['learnBTN', 'none'],['resume1', 'none'],['resume3','block']])"> Show Bio </a>
-                </div>
-                <div class="resumeLists">
-                    <a class="btn" id="resume1" onmouseover="changeDisplay([['dropDown1','block']])" onmouseleave="changeDisplay([['dropDown1','none']])"> Resume </a>
-                    <div class="resumeDropDown" id="dropDown1" onmouseover="changeDisplay([['dropDown1','block']])" onmouseleave="changeDisplay([['dropDown1','none']])">
-                        <div class="resume">
-                            <a href="downloadRepo/resumeRaiyan.pdf" download>
-                                <i class="fa-solid fa-file"></i><p>US Format</p>
-                            </a>
-                        </div>
-                        <div class="resume">
-                            <a href="downloadRepo/resumeRaiyanBDLong.pdf" download>
-                                <i class="fa-solid fa-file"></i><p>Bangladeshi [Long] Format</p>
-                            </a>
-                        </div>
-                        <div class="resume">
-                            <a href="downloadRepo/resumeRaiyanLang.pdf" download>
-                                <i class="fa-solid fa-file"></i><p>For Language Instruction</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
 
-            <div id ="introduction">
-                <div class="description">
-                    <p> 
-                        An intern at <a class ='links' href="https://unimedunihealth.com/" target ="_blank"> UniMed UniHealth Group</a> with a BSc in Computer Science from <a class = "links" href="https://www.nyu.edu/about.html" target="_blank"> 
-                            New York University</a>,<a class = "links" href="https://shanghai.nyu.edu/about" target="_blank">
-                        NYU Shanghai</a>, seeking a full-time position in the tech industry & education. 
-                        Some roles I am interested in are data analyst, software engineer, research assistant, 
-                        teaching assistant, and web developer. If you are in need of someone comfortable in a world increasingly mandating a global perspective 
-                        and interdisciplinary collaboration built atop a solid technical foundation further buttressed with real world experience and exposure
-                        you will find in me a strong candidate.
-                    <br>
-                    <br>
-                    <div id="skills">
-                        <i class="fa-solid fa-terminal"></i>
-                        <ul>
-                            <li><span>Programming Languages: </span></li>
-                            <li>Python, </li>
-                            <li>C++, </li>
-                            <li>C, </li>
-                            <li>Haskell,</li>
-                            <li>JavaScript</li>
-                        </ul>
-                        <ul>
-                            <li><span>OS: </span></li>
-                            <li>Windows, </li>
-                            <li>Linux </li>
-                        </ul>
-                        <ul>
-                            <li><span>Framework & Tools: </span></li>
-                            <li>Django, </li>
-                            <li>D3 Library of JavaScript, </li>
-                            <li>LaTex, </li>
-                            <li>Pandas, </li>
-                            <li>Numpy, </li>
-                            <li>Matplotlib,</li>
-                            <li>HTML, </li>
-                            <li>CSS </li>
-                        </ul>
-                        <ul>
-                            <li><span>Math & Math Heavy Courses: </span></li>
-                            <li> Multivariable Calculus, </li>
-                            <li> Linear Algebra, </li>
-                            <li> Probability & Statistics, </li>
-                            <li> Discrete Mathematics, </li>
-                            <li> Honors Physics I & II, </li>
-                            <li> Electromagnetism & Special Relativity, </li>
-                            <li> Introduction to Quantum Theory & Technology, </li>
-                            <li> Physics Laboratory I & II</li>
-                        </ul>
-                        <ul>
-                            <li><span>Languages: </span></li>
-                            <li> English (IELTS Academic: Speaking, 8.5; Listening, 8.5; Reading, 8.5; Writing, 7.0; Total, 8.0), </li>
-                            <li> Persian/Farsi (Conversational), </li>
-                            <li> Bangla (Conversational), </li>
-                            <li> Mandarin (Limited)</li>
-                        </ul>
-                    </div>
-                    </p>
-                </div>
-                <div id="git-and-linkedin" >
-                    <a href="https://github.com/srr408" target="_blank"><span>See GitHub Account</span><i class="fa-brands fa-github" id="github-icon"></i></a>
-                    <a href="https://www.linkedin.com/in/raiyan-reza" target="_blank"><span>See LinkedIn Profile</span><i class="fa-brands fa-linkedin" id="linkedin-icon"></i></a>
-                </div>
-                <div id="hide-btn">
-                    <div>
-                        <a class="btn" id="hide" onclick="changeDisplay([['introduction','none'],['learnBTN', 'block'],['resume1','block'],['resume3','none']])"> Hide Bio </a>
-                    </div>
-                    <div class="resumeLists">
-                        <a class="btn" id="resume3" onmouseover="changeDisplay([['dropDown3','block']])" onmouseleave="changeDisplay([['dropDown3','none']])"> Resume </a>
-                        <div class="resumeDropDown" id="dropDown3" onmouseover="changeDisplay([['dropDown3','block']])" onmouseleave="changeDisplay([['dropDown3','none']])">
-                        <div class="resume">
-                            <a href="downloadRepo/resumeRaiyan.pdf" download>
-                                <i class="fa-solid fa-file"></i><p>US Format</p>
-                            </a>
-                        </div>
-                        <div class="resume">
-                            <a href="downloadRepo/resumeRaiyanBDLong.pdf" download>
-                                <i class="fa-solid fa-file"></i><p>Bangladeshi [Long] Format</p>
-                            </a>
-                        </div>
-                        <div class="resume">
-                            <a href="downloadRepo/resumeRaiyanLang.pdf" download>
-                                <i class="fa-solid fa-file"></i><p>For Language Instruction</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    <!-- ----------------------- ABOUT ----------------------- -->
-        <div id="about">
-            <div class="container">
-                <h1 class="sub-heading">About Me</h1>
-            
-                <div class="credentials">
-                    <div>
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <h2> Education </h2>
-                        <ul class="cred-details">
-                            <li><span>May, 2023</span><br>BSc in Computer Science, New York University, NYU Shanghai</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-briefcase"></i>
-                        <h2> Experience </h2>
-                        <ul class="cred-details">
-                            <li><span>06th Oct, 2024 - Present</span><br>
-                            Intern, IT Department: <br>
-                            <a class ='links' href ='https://unimedunihealth.com/'><small> UniMed UniHealth Group; Dhaka, Bangladesh </small></a>
-                            </li>
-                        </ul>
-                        <ul class="cred-details">
-                            <li><span>06th Jun, 2022 - 12th Aug, 2022</span><br>
-                            Private Tuition, Introductory Computer Programming (Python, LaTeX): <br>
-                            <small> Client: Student at Independant University, Bangladesh (IUB); Dhaka, Bangladesh </small>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-terminal"></i>
-                        <h2> Skill </h2>
-                        <ul class="cred-details">
-                            <li><span>Programming Languages</span><br>Python, C, C++, Haskell, JavaScript</li>
-                            <li><span>OS</span><br>Windows, Linux</li>
-                            <li><span>Framework & Tools</span><br>
-                                Django,
-                                D3 Library of JavaScript,
-                                LaTex,
-                                Pandas,
-                                Numpy,
-                                Matplotlib,
-                                HTML, 
-                                CSS
-                            </li>
-                            <li><span> Math & Math Heavy Courses</span><br>
-                                Multivariable Calculus,
-                                Linear Algebra, 
-                                Probability & Statistics,
-                                Discrete Mathematics,
-                                Honors Physics I & II, 
-                                Electromagnetism & Special Relativity,
-                                Introduction to Quantum Theory & Technology,
-                                Physics Laboratory I & II
-                            </li>
-                            <li><span> Languages </span><br>
-                            <li> English (IELTS Academic: Speaking, 8.5; Listening, 8.5; Reading, 8.5; Writing, 7.0; Total, 8.0), </li>
-                            <li> Persian/Farsi (Conversational), </li>
-                            <li> Bangla (Conversational), </li>
-                            <li> Mandarin (Limited)</li>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-    <!-- ----------------------- PROJECTS ----------------------- -->
-        <div id="projects">
-            <div class="container">
-                <h1 class="sub-heading">Projects & Works</h1>
-                <div class="projects-list">
-                    <div class="project" id="info-viz-section">
-                        <!--<img src="images/info-viz.png" id="info-viz"> -->
-                        <img src="projectImages/info-viz.png" id="info-viz">
-                        <div class="project-caption">
-                            <h3>A Sketch of A Pandemic</h3>
-                        </div>
-                        <div class="layer">
-                            <h3>A Sketch of A Pandemic</h3>
-                            <p>
-                                Using D3 library of JavaScript, the mortality and cases
-                                of the COVID-19 pandemic is visualized with a special focus
-                                on the United States of America.
-                            </p>
-                            <ul class="external-links">
-                                <li>
-                                    <a href="pandemicViz/index.html" target="_blank">
-                                        <i class="fa-solid fa-link"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/srr408/A-Sketch-of-A-Pandemic" target="_blank">
-                                        <i class="fa-brands fa-github" id="github-icon"></i>
-                                    </a>
-                                </li>
-                            </ul>
+html{
+    scroll-behavior: smooth;
+}
 
-                        </div>
-                    </div>
-                    <div class="project" >
-                        <img src="projectImages/thesis.jpg" id="thesis">
-                        <div class="project-caption">
-                            <h3>Context Free Chinese Parser</h3>
-                        </div>
-                        <div class="layer">
-                            <h3>Context Free Chinese Parser</h3>
-                            <p>
-                                A collaborative work on using context free grammar to parse 
-                                simple sentences in Chinese. This work is primarily theoretical.
-                            </p>
-                            <ul class="external-links">
-                                <li>
-                                    <a href="downloadRepo/writtenReport_Raiyan.pdf" target="_blank">
-                                        <i class="fa-solid fa-file"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="projectImages/qalb.png" id="qalb">
-                        <div class="project-caption">
-                            <h3>Qalb+</h3>
-                        </div>
-                        <div class="layer">
-                            <h3>Qalb+</h3>
-                            <p>
-                              A web application prototype to bring patients
-                              and doctors together in the region of the United Arab Emirates.
-                              The work is a collaborative project and written in Django.
-                            </p>
-                            <ul class="external-links">
-                                <li>
-                                    <a href="https://github.com/srr408/qalbPlus" target="_blank">
-                                        <i class="fa-brands fa-github" id="github-icon"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="projectImages/python_image.jpg" id="qalb">
-                        <div class="project-caption">
-                            <h3>Private Introductory CS Course</h3>
-                        </div>
-                        <div class="layer">
-                            <h3>Private Introductory CS Course</h3>
-                            <p>
-                              A private course I organized to teach introductory computer science in Python.
-                            </p>
-                            <ul class="external-links">
-                                <li>
-                                    <a href="https://github.com/srr408/introCS" target="_blank">
-                                        <i class="fa-brands fa-github" id="github-icon"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ----------------------- CONTACTS ----------------------- -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-col1">
-                        <h1 class="sub-heading">Contact Me</h1>
-                        <p><i class="fa-solid fa-envelope"></i>srr408@nyu.edu</p>
-                        <p><i class="fa-solid fa-envelope"></i>syedraiyannurireza@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>(0088) 01706-562505</p>
-                        <div class="social-icons">
-                           <a href="https://github.com/srr408"><i class="fa-brands fa-github" id="github-icon2"></i></a> 
-                            <a href="https://www.linkedin.com/in/raiyan-reza"><i class="fa-brands fa-linkedin" id="linkedin-icon2"></i></a>
-                        </div>
-                    
-                        <div class="resumeLists">
-                            <a class="btn" id="resume2" onmouseover="changeDisplay([['dropDown2','block']])" onmouseleave="changeDisplay([['dropDown2','none']])"> Download Resume </a>
-                            <div class="resumeDropDown" id="dropDown2" onmouseover="changeDisplay([['dropDown2','block']])" onmouseleave="changeDisplay([['dropDown2','none']])">
-                                <div class="resume">
-                                    <a href="downloadRepo/resumeRaiyan.pdf" download>
-                                        <i class="fa-solid fa-file"></i><p>US Format</p>
-                                    </a>
-                                </div>
-                                <div class="resume">
-                                    <a href="downloadRepo/resumeRaiyanBDLong.pdf" download>
-                                        <i class="fa-solid fa-file"></i><p>Bangladeshi [Long] Format</p>
-                                    </a>
-                                </div>
-                                <div class="resume">
-                                    <a href="downloadRepo/resumeRaiyanLang.pdf" download>
-                                        <i class="fa-solid fa-file"></i><p>For Language Instruction</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="contact-col2">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email">
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="credits">
-                <h3>Credits</h3>
-                <p> The template for this site is based on <a href="https://www.youtube.com/watch?v=0YFrGy_mzjY&t=2s" target="_blank">Easy Tutorials/GreatStack</a>.</p>
-                <p> Jamie Wilson's code for a functional submit form is <a href="https://github.com/jamiewilson/form-to-google-sheets" target="_blank">here</a>.</p>
-            </div>
-        </div>
-        <script src="scripts.js"></script>
-    </body>
-</html>
+/*--------------------------- MY NAME IN A FANCY FONT ---------------------------*/
+#name-fancy{
+    font-family: eightBit;
+}
 
+#name-fancy span{
+    color: aqua;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+.container{
+    padding: 10px 10%;
+
+}
+
+.sub-heading{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+
+/*--------------------------- NAVIGATION BAR ---------------------------*/
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    transition: transform 0.5s;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*--------------------------- INTRO ---------------------------*/
+
+#name-fancy2 {
+    font-family: eightBit;
+}
+
+
+#name-fancy2 span{
+    color:aqua;
+}
+
+
+#my-picture{
+    border-radius: 50%;
+    max-width: 40%;
+    display:block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#git-and-linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+#git-and-linkedin a{
+    text-decoration:none;
+    font-size: 40px;
+    color:lightgray;
+    display: inline-block;
+    transition: transform 0.5s;
+    margin-right: 20px;
+}
+
+
+#git-and-linkedin a:hover{
+    color:#CE4A7EFF;
+    transform: translateY(25px);
+}
+
+#git-and-linkedin a:hover span{
+    display: block;
+    transform: translateY(-35px);
+}
+
+#git-and-linkedin a span{
+    display: none;
+    font-family: eightBit;
+    font-size: xx-small;
+    position:absolute;
+    transition: transform 0.5s;
+}
+
+
+.intro-text{
+    text-align: center;
+    font-size: larger;
+}
+
+.intro-text h1{
+    font-family: eightBit;
+}
+
+#show-resume{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.resumeDropDown{
+    margin-top: 0px;
+    background-color: #262626;
+    position:absolute;
+    display: none;
+}
+
+#dropDown1{
+    margin-left: 4px;
+    transform: translateY(-127%);
+}
+
+#learnBTN{
+    margin-top: 0px;
+    width:100%;
+}
+
+#resume1{
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+
+
+.resume{
+    margin-top: 10px;
+}
+.resume a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.resume a i{
+    color:lightgray;
+    font-size: 50px;
+}
+
+.resume a p{
+    vertical-align: middle;
+    margin-left: 5px;
+    font-family: eightBit;
+    font-size: x-small;
+    color: #fff;
+}
+
+.resume:hover{
+    background-color: aqua;
+}
+
+.resume:hover a i{
+    color:#CE4A7EFF;
+}
+
+.resume:hover a p{
+    color:#262626;
+    font-weight: 600;
+}
+
+.resume:hover a{
+    transform: translateX(-5px);
+}
+
+#hide-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    width:100%;
+}
+
+#hide{
+    margin-top: 21px;
+}
+
+#resume3{
+    margin-top: 21px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+#introduction{
+    display: none;
+}
+
+.description{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.description h2{
+    text-align: center;
+}
+.description ul{
+    margin-left: 10px;
+    list-style: none;
+}
+
+.description ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: small;
+}
+
+.description ul li span{
+    color: aqua;
+    font-family: eightBit
+}
+
+#skills{
+    background-color: #262626;
+    border-radius: 10px;
+}
+
+#skills i{
+    margin-left: 5px;
+}
+
+#skills:hover{
+    background-color: aqua;
+}
+
+#skills:hover i{
+    color: #CE4A7EFF;
+}
+
+#skills:hover ul li span{
+    color: #CE4A7EFF;
+}
+
+#skills:hover ul li{
+    color: #262626;
+}
+
+.links{
+    color:#CE4A7EFF;
+}
+
+/*--------------------------- ABOUT ME ---------------------------*/
+
+#about{
+    padding: 30px 0;
+}
+.credentials{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top:50px;
+}
+
+.credentials div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.credentials div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.credentials div h2{
+    font-family: eightBit;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.credentials div:hover{
+    color: #CE4A7EFF;
+    background: aqua;
+    transform: translateY(-10px);
+}
+
+.credentials div:hover li span{
+    color:#262626;
+    font-weight: 600;
+}
+
+.credentials div:hover .cred-details li{
+    font-weight: 400;
+}
+
+.credentials div:hover .cred-details li a{
+    color:purple;
+}
+.cred-details li{
+    list-style: none;
+    margin: 10px 0; 
+}
+
+.cred-details li span{
+    color:aqua;
+    font-size: 14px;
+}
+
+/*--------------------------- PROJECTS ---------------------------*/
+
+
+#projects{
+    padding: 50px 0;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top:50px; 
+}
+
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img{
+    object-fit: cover;
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5;
+}
+
+.project-caption{
+    text-align: center;
+}
+
+.project-caption h3{
+    font-family: eightBit;
+    font-size: smaller;
+}
+
+.project:hover .project-caption{
+    visibility: hidden;
+}
+
+
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),aqua);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow:hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 5px;
+}
+
+
+.layer a{
+    display: inline-block;
+    margin-top: 20x;
+    color: aqua;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+
+.project:hover img{
+    transform: scale(1.1);
+}
+
+.project:hover .layer{
+    height: 100%;
+}
+
+
+/*--------------------------- CONTACT ME ---------------------------*/
+
+.contact-col1{
+    flex-basis: 35%;
+}
+
+.contact-col2{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-col1 p i{
+    color: #CE4A7EFF;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration:none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #CE4A7EFF;
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #CE4A7EFF;
+    padding: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background:#CE4A7EFF;
+}
+
+.btn.btn2{
+    background:#CE4A7EFF;
+    display: inline-block;
+}
+
+#resume2{
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#dropDown2{
+    margin-top:0px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:#262626;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size:18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 6opx;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.credits{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background:#262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.credits a{
+    color: aqua;
+}
+
+.credits h3{
+    font-size: small;
+}
+
+.credits p{
+    font-size:smaller;
+}
+
+.row{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+
+#msg{
+    color: #61b752;
+    margin-top: -40 px;
+    display: block;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+/*--------------------------- SMALL SCREEN ---------------------------*/
+
+@media only screen and (max-width: 600px){
+
+    #name-fancy{
+        visibility: hidden;
+    }
+
+    .intro-col-1{
+        margin-top: 53%;
+        flex-basis: 100%;
+    }
+
+    .intro-col-2{
+        flex-basis: 100%;
+    }
+
+    #my-picture{
+        margin-top:10%;
+        max-width:80%;
+    }
+
+    #learnBTN{
+        font-size: x-small;
+    }
+
+    #resume1{
+        font-size:x-small;
+    }
+
+    #resume3{
+        font-size:x-small;
+    }
+
+    #hide{
+        font-size: x-small;
+    }
+
+    .intro-text{
+        
+        margin-top: 100;
+        font-size: 16px;
+    }
+
+    .intro-text{
+        font-size:30 px;
+    }
+    
+    .intro-text h1{
+        font-family: eightBit;
+        font-size: 25px;
+    }
+
+    
+
+    nav .fa-solid{
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .description ul li{
+        font-size: x-small;
+    }
+
+    .sub-heading{
+        font-size: 40px;
+    }
+
+    .contact-col1, .contact-col2{
+        flex-basis: 100%;
+    }
+
+    .credits h3{
+        font-size: smaller;
+    }
+
+    .credits p{
+        font-size:x-small;
+    }
+}
